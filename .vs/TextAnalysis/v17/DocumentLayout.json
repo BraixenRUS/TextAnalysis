@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\frequencyanalysistask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:frequencyanalysistask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\frequencyanalysis_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:frequencyanalysis_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\sentencesparsertask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:sentencesparsertask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\textgenerator_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:textgenerator_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\frequencyanalysis_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:frequencyanalysis_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\frequencyanalysistask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|solutionrelative:frequencyanalysistask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{109416AB-891E-1040-A5BE-F0D7A6220A8F}|TextAnalysis.csproj|c:\\users\\braixen\\dev\\ulearn\\textanalysis\\sentencesparser_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,49 +34,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SentencesParserTask.cs",
               "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\SentencesParserTask.cs",
               "RelativeDocumentMoniker": "SentencesParserTask.cs",
               "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\SentencesParserTask.cs",
               "RelativeToolTip": "SentencesParserTask.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T16:25:18.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TextGeneratorTask.cs",
-              "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\TextGeneratorTask.cs",
-              "RelativeDocumentMoniker": "TextGeneratorTask.cs",
-              "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\TextGeneratorTask.cs",
-              "RelativeToolTip": "TextGeneratorTask.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBAAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FrequencyAnalysisTask.cs",
+              "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysisTask.cs",
+              "RelativeDocumentMoniker": "FrequencyAnalysisTask.cs",
+              "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysisTask.cs",
+              "RelativeToolTip": "FrequencyAnalysisTask.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T14:47:58.935Z",
+              "WhenOpened": "2025-11-07T14:19:32.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FrequencyAnalysis_Tests.cs",
               "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysis_Tests.cs",
               "RelativeDocumentMoniker": "FrequencyAnalysis_Tests.cs",
               "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysis_Tests.cs",
               "RelativeToolTip": "FrequencyAnalysis_Tests.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAALcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T14:47:48.889Z"
+              "WhenOpened": "2025-11-07T14:47:48.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TextGenerator_Tests.cs",
               "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\TextGenerator_Tests.cs",
               "RelativeDocumentMoniker": "TextGenerator_Tests.cs",
@@ -100,15 +101,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrequencyAnalysisTask.cs",
-              "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysisTask.cs",
-              "RelativeDocumentMoniker": "FrequencyAnalysisTask.cs",
-              "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\FrequencyAnalysisTask.cs",
-              "RelativeToolTip": "FrequencyAnalysisTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TextGeneratorTask.cs",
+              "DocumentMoniker": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\TextGeneratorTask.cs",
+              "RelativeDocumentMoniker": "TextGeneratorTask.cs",
+              "ToolTip": "C:\\Users\\Braixen\\dev\\ulearn\\TextAnalysis\\TextGeneratorTask.cs",
+              "RelativeToolTip": "TextGeneratorTask.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T14:19:32.025Z"
+              "WhenOpened": "2025-11-07T14:47:58.935Z"
             }
           ]
         }

@@ -8,34 +8,37 @@ namespace TextAnalysis
     {
         public static Dictionary<string, string> GetMostFrequentNextWords(List<List<string>> text)
         {
-            var result = new Dictionary<string, string>();
-            var bigramFrequencies = GetNGramFrequencies(text, 2);
-            var trigramFrequencies = GetNGramFrequencies(text, 3);
-            result = IncludeDictionaryInDictionary(bigramFrequencies, result);
-            return IncludeDictionaryInDictionary(trigramFrequencies, result);
+            var result = CalculateAllNGrams(text);
+            return GetMostFrequentContinuations(result);
         }
 
-        public static Dictionary<string, string> GetNGramFrequencies(List<List<string>> text, int n)
+        private static Dictionary<string, Dictionary<string, int>> CalculateAllNGrams(List<List<string>> text)
         {
-            var frequencyDict = new Dictionary<string, Dictionary<string, int>>();
+            var dict = new Dictionary<string, Dictionary<string, int>>();
+
             foreach (var sentence in text)
             {
-                if (sentence.Count < n) continue;
-                for (int i = 0; i <= sentence.Count - n; i++)
+                for (int n = 2; n <= 3; n++)
                 {
-                    string key = string.Join(" ", sentence.GetRange(i, n - 1));
-                    string nextWord = sentence[i + n - 1];
-                    if (!frequencyDict.ContainsKey(key))
-                        frequencyDict[key] = new Dictionary<string, int>();
-                    if (!frequencyDict[key].ContainsKey(nextWord))
-                        frequencyDict[key][nextWord] = 0;
-                    frequencyDict[key][nextWord]++;
+                    if (sentence.Count < n) continue;
+                    for (var i = 0; i <= sentence.Count - n; i++)
+                    {
+                        var key = string.Join(" ", sentence.GetRange(i, n - 1));
+                        var nextWord = sentence[i + n - 1];
+
+                        if (!dict.ContainsKey(key))
+                            dict[key] = new Dictionary<string, int>();
+                        if (!dict[key].ContainsKey(nextWord))
+                            dict[key][nextWord] = 0;
+                        dict[key][nextWord]++;
+                    }
                 }
             }
-            return GetMostFrequentContinuations(frequencyDict);
+            return dict;
         }
 
-        public static Dictionary<string, string> GetMostFrequentContinuations(Dictionary<string, Dictionary<string, int>> dict)
+        private static Dictionary<string, string> GetMostFrequentContinuations(
+            Dictionary<string, Dictionary<string, int>> dict)
         {
             var result = new Dictionary<string, string>();
             foreach (var keyValue in dict)
@@ -43,21 +46,12 @@ namespace TextAnalysis
                 string key = keyValue.Key;
                 var continuations = keyValue.Value;
                 int maxFrequency = continuations.Values.Max();
-                var mostFrequent = continuations
+                result[key] = continuations
                     .Where(pair => pair.Value == maxFrequency)
-                    .Select(pair => pair.Key);
-                string bestContinuation = mostFrequent
+                    .Select(pair => pair.Key)
                     .OrderBy(word => word, StringComparer.Ordinal)
                     .First();
-                result[key] = bestContinuation;
             }
-            return result;
-        }
-
-        public static Dictionary<string, string> IncludeDictionaryInDictionary(Dictionary<string, string> dict, Dictionary<string, string> result)
-        {
-            foreach (var pair in dict)
-                result[pair.Key] = pair.Value;
             return result;
         }
     }
