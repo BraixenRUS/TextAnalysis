@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextAnalysis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a08c7094c368f54d65b8d3afc7b4e21de3233680")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+242dc72988a6b06f20852c8e4491a7f7c787be80")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextAnalysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextAnalysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
